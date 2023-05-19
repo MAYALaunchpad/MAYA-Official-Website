@@ -1,0 +1,97 @@
+.PCSchedule{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .PCSchedule_content{
+        width: 1240px;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        height: 100%;
+        position: relative;
+        .PCSchedule_Left{
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: start;
+            gap: 140px;
+            .schedule_item:first-child{
+                margin-top: 25px;
+            }
+        }
+        .centerline{
+
+        }
+        .PCSchedule_Right{
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            gap: 150px;
+            // margin-top: px;
+            .schedule_item:first-child{
+                margin-top: 150px;
+            }
+        }
+        .PCScheduleMask{
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%,-50%);
+            // z-index:1;
+        }
+    }
+}
+
+.schedule_item{
+    width: 520px;
+    height: 195px;
+    background-color:rgba(249, 81, 146, 0.05);
+    backdrop-filter: blur(5px);
+    display: flex;
+    padding: 30px 40px;
+    box-sizing: border-box;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    .schedule_item_time{
+        font-family: 'Inter';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 24px;
+        line-height: 29px;
+        text-transform: uppercase;
+        color: #F95192;
+        flex-wrap: wrap;
+    }
+    .schedule_item_desc{
+        width: 100%;
+        font-family: 'Inter';
+        font-style: normal;
+        font-weight: 600;
+        font-size: 16px;
+        line-height: 28px;
+        /* or 175% */
+        color: rgba(0, 0, 0, 0.8);
+    }
+    .schedule_item_timeImg{
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        font-family: 'Inter';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 130px;
+        line-height: 105px;
+        text-transform: uppercase;
+        color: rgba(249, 81, 146, 0.2);
+    }
+}
+
+@media only screen and (min-width: 300px) and (max-width: 640px) {
+    .PCSchedule{
+        display: none;
+    }
+}

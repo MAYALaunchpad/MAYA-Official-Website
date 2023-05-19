@@ -1,0 +1,39 @@
+[
+    {
+        "id":1,
+        "time":"2023年4月15日",
+        "desc":"我们很高兴地宣布，Maya Launchpad平台将上线，为用户创造一个发现令人兴奋的新项目的空间。",
+        "progressNumber":20,
+        "progressString":"20%"
+    },{
+        "id":2,
+        "time":"2023年5月1日",
+        "desc":"我们通过本地Maya代币的预售，为早期支持者提供参与和从平台增长中受益的机会。",
+        "progressNumber":40,
+        "progressString":"40%"
+    },{
+        "id":3,
+        "time":"2023年5月15日",
+        "desc":"Maya代币的公开销售将开始，面向所有有兴趣的参与者开放。",
+        "progressNumber":60,
+        "progressString":"60%"
+    },{
+        "id":4,
+        "time":"2023年6月1日",
+        "desc":"代币质押将启用，为代币质押者提供对Maya上启动的所有项目的平等分配权。",
+        "progressNumber":80,
+        "progressString":"80%"
+    },{
+        "id":5,
+        "time":"2023年6月15日",
+        "desc":"第一个项目将在Maya平台上启动，这是我们旅程中的一个重要里程碑。",
+        "progressNumber":100,
+        "progressString":"100%"
+    },{
+        "id":6,
+        "time":"2023年Q3-Q4",
+        "desc":"我们将继续通过添加新功能、改善用户体验并整合我们不断壮大的社区的反馈来改进和扩展Maya平台。",
+        "progressNumber":100,
+        "progressString":"100%"
+    }
+]

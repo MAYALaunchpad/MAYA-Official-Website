@@ -1,0 +1,64 @@
+.mobile_schedule{
+    display: none;
+}
+
+@media only screen and (min-width: 300px) and (max-width: 640px) {
+    .mobile_schedule{
+        display: flex;
+        width: 95%;
+        margin: 0 auto;
+        gap: 15px;
+        flex-wrap: wrap;
+        position: relative;
+        .time_item{
+            width: 100%;
+            position: relative;
+            height: 200px;
+            padding: 15px 0 0 20px;
+            box-sizing: border-box;
+            justify-content: space-around;
+            display: flex;
+            flex-direction: column;
+            background-color: rgba(249, 81, 146, 0.05);
+            .time{
+                font-family: 'Inter';
+                font-style: normal;
+                font-weight: 700;
+                font-size: 24px;
+                line-height: 29px;
+                /* identical to box height */
+                text-transform: uppercase;
+                color: #F95192;
+            }
+            .announce{
+                width: 100%;
+                text-align: left;
+                font-family: 'Inter';
+                font-style: normal;
+                font-weight: 600;
+                font-size: 14px;
+                line-height: 28px;
+                color: rgba(0, 0, 0, 0.8);
+            }
+            .timeImg{
+                position: absolute;
+                bottom: 0;
+                right: 0;
+                font-family: 'Inter';
+                font-style: normal;
+                font-weight: 700;
+                font-size: 85px;
+                line-height: 70px;
+                text-transform: uppercase;
+                color: rgba(249, 81, 146, 0.2);
+            }
+        }
+        .mobile_scheduleMask{
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%,-50%);
+            width: 100%;
+        }
+    }
+}

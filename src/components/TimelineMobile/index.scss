@@ -1,0 +1,112 @@
+.timeline-mobile{
+    display: none;
+}
+
+
+
+@media only screen and (min-width: 300px) and (max-width: 640px) {
+    .timeline-mobile{
+        display: flex;
+        width: 95%;
+        flex-direction: row;
+        .timelineMobLeft{
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+            .mobileLeft{
+                display: flex;
+                flex-direction: row;
+                height: 100%;
+                align-items: center;
+                .timeline-item{
+                    width: 100%;
+                    background: #FFFFFF;
+                    border: 3px solid #F95192;
+                    border-radius: 12px;
+                    margin-bottom: 10px;
+                    padding: 10px;
+                    box-sizing: border-box;
+                    display: flex;
+                    // height: 300px;
+                    flex-direction: column;
+                    justify-content: space-around;
+                    .itemTime{
+                        width: 100%;
+                        
+                        font-style: normal;
+                        font-weight: 700;
+                        font-size: 18px;
+                        line-height: 22px;
+                        /* identical to box height, or 92% */
+                        text-align: center;
+                        margin: 15px 0;
+                        color: rgba(0, 0, 0, 0.85);
+                    }
+                    .itemDesc{
+                        
+                        font-style: normal;
+                        font-weight: 400;
+                        font-size: 16px;
+                        line-height: 28px;
+                        margin-bottom: 15px;
+                        /* or 140% */
+                        text-align: center;
+                        color: #000000;
+                    }
+                    .progress-area{
+                        margin: 0 auto;
+                        width: 65px;
+                        height: 65px;
+                        .ant-progress{
+                            display: flex;
+                            justify-content: center;
+                            width: 100%;
+                            height: 100%;
+                            .ant-progress-inner{
+                                width: 100% !important;
+                                height: 100% !important;
+                                .ant-progress-text{
+                                    font-size: 16px !important;
+                                    color: rgba(0, 0, 0, 0.88)
+                                }
+                                .ant-progress-circle-path{
+                                    display: block;
+                                    width: 65px;
+                                    height: 65px;
+                                    // stroke:#F95192 !important;
+                                }
+                            }
+                        }
+                    }
+                }
+
+                .point{
+                    margin-left: 30px;
+                    width: 15px;
+                    height: 15px;
+                    border-radius: 50%;
+                    display: flex;
+                    justify-content: center;
+                    position: relative;
+                    .time-line{
+                        height: 180px;
+                        margin-top: 15px;
+                        border-left: 1px solid #F95192;
+                    }
+                    
+                    .time-unselectline{
+                        border-left: 1px dashed #F95192;
+                    }
+                }
+
+                .time-selectpoint{
+                    background: #F95192;
+                }
+                .time-unselectpoint{
+                    border: 1px solid #F95192;
+                    background: #fff;
+                }
+            }
+        }
+    }
+}
